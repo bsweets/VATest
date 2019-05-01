@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <connect_queue/>
+        <description/>
+        <graph>{
+  "graph_api_version": "1.0.10",
+  "goals": {
+    "393469b8b8854af48e9c2da171cb61a9": {
+      "id": "393469b8b8854af48e9c2da171cb61a9",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b6f001182ec341c6be74d822adfe64a9": {
+          "id": "b6f001182ec341c6be74d822adfe64a9",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "be5e264b3d934b149da82719921a99c7": {
+          "id": "be5e264b3d934b149da82719921a99c7",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d2718e0305bd44f494695837ad4318d5": {
+          "id": "d2718e0305bd44f494695837ad4318d5",
+          "stepType": "Prompt",
+          "name": "User name",
+          "prompt": {
+            "value": "What is your name?",
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "Got it.",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "Got it.",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "optional": false,
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "1ad3d77da4a1448f822697e1b64d09cc"
+        }
+      },
+      "edges": [
+        {
+          "id": "37e8d9589160408394313becc1df5d2f",
+          "edgeType": "Edge",
+          "source": "b6f001182ec341c6be74d822adfe64a9",
+          "target": "d2718e0305bd44f494695837ad4318d5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "56d4d15b90224c59b00ea723dfa756bd",
+          "edgeType": "Edge",
+          "source": "d2718e0305bd44f494695837ad4318d5",
+          "target": "be5e264b3d934b149da82719921a99c7",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "1ad3d77da4a1448f822697e1b64d09cc": {
+      "id": "1ad3d77da4a1448f822697e1b64d09cc",
+      "name": "user_name",
+      "label": "User Name",
+      "varType": "string",
+      "category": "vaInputs"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>Epic Outage Remediation</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Epic Outage Remediation</name>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-01 17:06:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d15f59dbdb0133004ab89c68db9619bc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Epic Outage Remediation</sys_name>
+        <sys_package display_value="Test VA Conversations" source="x_126321_test_va_c">c93f9953db0133004ab89c68db961926</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test VA Conversations">c93f9953db0133004ab89c68db961926</sys_scope>
+        <sys_update_name>sys_cb_topic_d15f59dbdb0133004ab89c68db9619bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-01 17:07:53</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=d15f59dbdb0133004ab89c68db9619bc"/>
+</record_update>
